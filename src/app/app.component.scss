@@ -1,0 +1,23 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Espaciado entre tarjetas */
+  }
+  
+  .block {
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .block {
+      width: 100%; /* Se expande al 100% en pantallas pequeñas */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .block {
+      width: calc(33.333% - 16px); /* 3 tarjetas por fila en pantallas medianas */
+    }
+  }
+  
